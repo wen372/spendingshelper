@@ -1,13 +1,13 @@
 import React, {useState, useCallback} from 'react';
 import {useDropzone} from 'react-dropzone'
-
 import Papa from 'papaparse';
+import { Button} from 'react-bootstrap';
+
+import { useNavigate} from 'react-router-dom';
 
 
 
-
-
-function FileDropZone() {
+function FileDropZone(props) {
 
   const parseFile = file => {
     Papa.parse(file, {
@@ -28,7 +28,7 @@ function FileDropZone() {
     }
     
   }, []);
-  console.log(parsedCsvData)
+  // console.log(parsedCsvData) //
   const {
     getRootProps,
     getInputProps,
@@ -37,7 +37,12 @@ function FileDropZone() {
     isDragReject,
   } = useDropzone({onDrop, accept:'text/csv, application/vnd.ms-excel'});
 
-
+  // function to redirection page
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/`; 
+    navigate(path);
+  }
 
 return (
   <div>
@@ -55,24 +60,48 @@ return (
     </div>
 
     {parsedCsvData.map((parsedData, index) => (
-      <tbody>
-        <tr key={index}>
+      
+        <div className = {"item :" + {index}}>
         
-          <td>{parsedData.Details}</td>
+          {/* {console.log("ParsedData = " + Object.keys(parsedData))} */}
+          {/* {console.log("ParsedData = " + parsedData.Type)} */}
+
+
+
+
+
+          {Object.keys(parsedData).forEach(column => {
+
+            console.log(column, ':', parsedData[column]);
+            
+            <td>{parsedData[column]}</td>
+            // console.log(parsedData.Amount);
+            })
+            }
+
+          {/* <td>{parsedData.Details}</td>
           <td>{parsedData.PostingDate}</td>
           <td>{parsedData.Amount}</td>
           <td>{parsedData.Description}</td>
           <td>{parsedData.Type}</td>
           <td>{parsedData.CheckNo}</td>
-          <td>{parsedData.Balance}</td>
+          <td>{parsedData.Balance}</td> */}
 
-        </tr>
-      </tbody>
+        </div>
+      
     ))}
 
 
+<Button color="primary" className="px-4"
+            onClick={routeChange}
+              >
+              Homepage
+            </Button>
 
-    
+<button onClick={() => {props.sendToParent(parsedCsvData)}}>Update</button>
+
+
+
   </div>
   
 );
