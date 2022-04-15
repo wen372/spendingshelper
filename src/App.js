@@ -12,7 +12,8 @@ import Transaction from './components/Transaction';
 import TransactionComponent from './components/TransactionComponent';
 import FileDropZone from './components/FileDropZone';
 import HomePage from './components/HomePage';
-
+import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
 <div>
+    <NavBar/>
     <Router>
         <Routes>
                 <Route path="/2" element={<FileDropZone sendToParent = {setChildData}/>} exact/>
@@ -33,7 +35,7 @@ function App() {
     //   <TransactionComponent/>
     //   <FileDropZone />
     // </div> */}
-    
+
     <button onClick={() => {console.log(childData)}}>console.log</button>
 
     </div>
