@@ -3,7 +3,7 @@ import {useDropzone} from 'react-dropzone'
 import Papa from 'papaparse';
 import { Button} from 'react-bootstrap';
 
-import { useNavigate} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
 
@@ -37,12 +37,6 @@ function FileDropZone(props) {
     isDragReject,
   } = useDropzone({onDrop, accept:'text/csv, application/vnd.ms-excel'});
 
-  // function to redirection page
-  let navigate = useNavigate(); 
-  const routeChange = () =>{ 
-    let path = `/`; 
-    navigate(path);
-  }
 
 return (
   <div>
@@ -92,12 +86,9 @@ return (
     ))}
 
 
-<Button color="primary" className="px-4"
-            onClick={routeChange}
-              >
-              Homepage
-            </Button>
+<Link to="/"><Button renderAs="button">HomePage</Button></Link>
 
+{/* saves state back to parent */}
 <button onClick={() => {props.sendToParent(parsedCsvData)}}>Update</button>
 
 

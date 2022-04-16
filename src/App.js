@@ -11,22 +11,39 @@ import React, { useState } from "react";
 import Transaction from './components/Transaction';
 import TransactionComponent from './components/TransactionComponent';
 import FileDropZone from './components/FileDropZone';
-import HomePage from './components/HomePage';
+import HomePage from './pages/HomePage';
+import UploadPage from './pages/UploadPage';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  const [childData, setChildData] = useState("");
+  const [userTransactionData, setTransactionData] = useState([]);
+
+
+   React.useEffect(() => {
+    //code here
+    console.log("Transaction Data updated")
+  }, [userTransactionData]);
+
+
+
 
   return (
-<div>
-    <NavBar/>
+  <div>
+    
     <Router>
+        <NavBar/>
         <Routes>
-                <Route path="/2" element={<FileDropZone sendToParent = {setChildData}/>} exact/>
-                <Route path="/1" element={<TransactionComponent/>} exact/>
-                <Route path="/" element={<HomePage/>} exact/>
+                <Route path="/2" element={<FileDropZone sendToParent = {setTransactionData}/>}/>
+                <Route path="/upload" element={<UploadPage/>} />
+
+                <Route path="/1" element={<TransactionComponent/>} />
+                {/* <Route path="/" element={<HomePage transactions = {transactionData}/>} /> */}
+                {/* <Route path="/" element={<HomePage message = "test"/>} /> */}
+                <Route path="/" element={<HomePage transactionData = {userTransactionData}/>} />
+                
+
         </Routes>
     </Router>
     {/* // <div className="App">
@@ -36,9 +53,9 @@ function App() {
     //   <FileDropZone />
     // </div> */}
 
-    <button onClick={() => {console.log(childData)}}>console.log</button>
+    <button onClick={() => {console.log(userTransactionData)}}>console.log</button>
 
-    </div>
+  </div>
 
   );
 }

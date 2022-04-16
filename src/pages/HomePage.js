@@ -1,13 +1,18 @@
-import React from 'react';
+import React,{useState, useCallback} from 'react';
 import Chart from 'chart.js/auto';
 import { Doughnut } from 'react-chartjs-2';
-import PiChart from './PiChart';
+import PiChart from '../components/PiChart';
+import TransactionList from '../components/TransactionList';
 
-import { Line } from "react-chartjs-2";
+import { Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 
+function HomePage({transactionData}) {
 
-function HomePage({content}) {
+
+  
+
   return (
     <div className="application container-fluid homepage TransactionComponent col-10 col-md-10 col-lg-10">
       <div className="innerInfo container col-1 col-md-6 col-lg-8">
@@ -25,12 +30,29 @@ function HomePage({content}) {
         
         <div className='transactionInfoList col-bg'>
             Info
+            {/* {this.props.transactionData} */}
+
+            
+            <button onClick={() => {console.log(transactionData)}}>propsState</button>
+
+            <Link to="/2"><Button renderAs="button">upload</Button></Link>
+
+ 
+            <Link to="/upload"><Button renderAs="button">uploadPage</Button></Link>
+
+
+            <TransactionList list={transactionData}/>
+
         </div> 
       
       </div>
     
     </div>
   );
+  
 }
+
+
+
 
 export default HomePage;

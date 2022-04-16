@@ -1,10 +1,11 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 
-function HomePage({content}) {
+function NavBar({content}) {
   return (
-<div>
-<div className="loginBtn">
+<div class= "NavBar">
+  <div className="loginBtn">
     <button type="button"  className="btn btn-light">Log In</button>
   </div>
  
@@ -15,11 +16,10 @@ function HomePage({content}) {
       </label>
 
       <ul class="menu__box">
-        <li><a class="menu__item" href="#">Home</a></li>
+        <li><NavLink to="/" ><p class ="menu__item">Home</p></NavLink></li>
         <li><a class="menu__item" href="#">About Us</a></li>
         <li><a class="menu__item" href="#">Log In</a></li>
         <li><a class="menu__item" href="#">Sign Up</a></li>
-        <li><a class="menu__item" href="#">Hi</a></li>
       </ul>
   </div>
  
@@ -27,4 +27,4 @@ function HomePage({content}) {
   );
 }
 
-export default HomePage;
+export default NavBar;
