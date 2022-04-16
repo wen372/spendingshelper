@@ -30,14 +30,7 @@ function HomePage({transactionData}) {
         
         <div className='transactionInfoList col-bg'>
             Info
-            {/* {this.props.transactionData} */}
 
-            
-            <button onClick={() => {console.log(transactionData)}}>propsState</button>
-
-            <Link to="/2"><Button renderAs="button">upload</Button></Link>
-
- 
             <Link to="/upload"><Button renderAs="button">uploadPage</Button></Link>
 
 

@@ -4,7 +4,7 @@ import { Button} from 'react-bootstrap';
 import FileDropZone from '../components/FileDropZone';
 
 
-function TransactionComponent({content}) {
+function UploadPage(props) {
 
 
   const [transactionData, setTransactionData] = useState([]);
@@ -12,11 +12,15 @@ function TransactionComponent({content}) {
 
   return (
     <div className="UploadPage">
-    <FileDropZone sendToParent = {setTransactionData}/>
+    <FileDropZone setTransactionData = {setTransactionData}/>
+    <button onClick={() => {props.sendToParent(transactionData)}}>Submit</button>
+
+    <br></br>
+
     <Link to="/"><Button renderAs="button">Home page</Button></Link>
 
     </div>
   );
 }
 
-export default TransactionComponent;
+export default UploadPage;

@@ -35,8 +35,8 @@ function App() {
     <Router>
         <NavBar/>
         <Routes>
-                <Route path="/2" element={<FileDropZone sendToParent = {setTransactionData}/>}/>
-                <Route path="/upload" element={<UploadPage/>} />
+
+                <Route path="/upload" element={<UploadPage sendToParent = {setTransactionData}/>} />
 
                 <Route path="/1" element={<TransactionComponent/>} />
                 {/* <Route path="/" element={<HomePage transactions = {transactionData}/>} /> */}
