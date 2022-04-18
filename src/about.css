@@ -1,0 +1,9 @@
+.nobdr{
+    border:none;
+}
+
+.img-ctp {
+    max-width: 45px !important;
+    border-radius: 13%;
+    margin: 30vh 0px 0px 0px;
+}

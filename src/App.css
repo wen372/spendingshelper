@@ -8,6 +8,9 @@
 
 }
 
+.no_underline{
+  text-decoration: none !important;
+}
 .dropzone {
   background: #eee;
   display: flex;
@@ -17,7 +20,7 @@
   padding: 20px;
   cursor: pointer;
   height: 150px;
-  width: 400px;
+  width: 100%;
   border: 2px dashed cyan;
   outline: none;
 }
@@ -43,6 +46,10 @@
 .application{
   
   
+}
+
+.topSpace {
+  margin-top: 50px;
 }
 
 .innerInfo{
@@ -88,8 +95,8 @@
 .loginBtn button{
   /* //move left */
   float: right;
-  margin: 15px 10px 0px 0px;
-  padding: 9x 10px 9px 10px;
+  margin: 10px 10px 0px 0px;
+  z-index: 10;
 }
 
 .middleT{
@@ -98,7 +105,8 @@
 }
 
 .NavBar{
-  padding-bottom: 80px;
+  padding-bottom: 33px;
+  background-color: #333;
 }
 
 .UploadPage{

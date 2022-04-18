@@ -14,6 +14,7 @@ import FileDropZone from './components/FileDropZone';
 import HomePage from './pages/HomePage';
 import UploadPage from './pages/UploadPage';
 import NavBar from './components/NavBar';
+import AboutPage from './pages/AboutPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
                 {/* <Route path="/" element={<HomePage transactions = {transactionData}/>} /> */}
                 {/* <Route path="/" element={<HomePage message = "test"/>} /> */}
                 <Route path="/" element={<HomePage transactionData = {userTransactionData}/>} />
-                
+                <Route path="/about" element={<AboutPage/>} />
 
         </Routes>
     </Router>

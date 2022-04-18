@@ -6,7 +6,8 @@ function NavBar({content}) {
   return (
 <div class= "NavBar">
   <div className="loginBtn">
-    <button type="button"  className="btn btn-light">Log In</button>
+    <button type="button" className="btn btn-light">Log In</button>
+   
   </div>
  
   <div class="hamburger-menu">
@@ -16,10 +17,12 @@ function NavBar({content}) {
       </label>
 
       <ul class="menu__box">
-        <li><NavLink to="/" ><p class ="menu__item">Home</p></NavLink></li>
-        <li><a class="menu__item" href="#">About Us</a></li>
-        <li><a class="menu__item" href="#">Log In</a></li>
-        <li><a class="menu__item" href="#">Sign Up</a></li>
+        <li><NavLink to="/" ><a class ="no_underline menu__item">Home</a></NavLink></li>
+        <li><NavLink to="/upload" ><a class ="menu__item">Upload</a></NavLink></li>
+        <li><NavLink to="/" ><a class ="menu__item">Log In</a></NavLink></li>
+        <li><NavLink to="#" ><a class ="menu__item">Sign Up</a></NavLink></li>
+        <li><NavLink to="/about" ><a class ="menu__item">About Us</a></NavLink></li>
+
       </ul>
   </div>
  

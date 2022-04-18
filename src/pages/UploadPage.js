@@ -11,7 +11,7 @@ function UploadPage(props) {
 
 
   return (
-    <div className="UploadPage">
+    <div className="UploadPage topSpace">
     <FileDropZone setTransactionData = {setTransactionData}/>
     <button onClick={() => {props.sendToParent(transactionData)}}>Submit</button>
 
