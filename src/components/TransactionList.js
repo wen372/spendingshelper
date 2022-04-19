@@ -5,13 +5,33 @@ function TransactionList({list}) {
 
   //creates list of Transaction components
   let finalList = list.map((transaction,index) => 
-      <Transaction content= {transaction} key={index}/>
+        
+          <Transaction content= {transaction} key={index}/>
+        
   )
 
+
+
+
+
   return (
-    <div className="TransactionList">
-        {finalList} 
-    </div>
+
+        <table className='TransactionTable'>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Amount</th>
+              <th>Remaining Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            {finalList}
+          </tbody>
+        </table>
+
+        
+
   );
 }
 

@@ -75,6 +75,7 @@
 .transactionInfoList{
   border: 2px dashed green;
   min-height: 200px;
+
 }
 
 .rowBoxTwoInfo{
@@ -116,8 +117,18 @@
   align-items: center;
 }
 
-
-
+.TransactionList{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction:column;
+}
+.TransactionTable{
+  width: 100%;
+  border: 2px solid black;
+  
+}
 
 
 

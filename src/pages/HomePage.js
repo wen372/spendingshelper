@@ -4,8 +4,7 @@ import { Doughnut } from 'react-chartjs-2';
 import PiChart from '../components/PiChart';
 import TransactionList from '../components/TransactionList';
 
-import { Button} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+
 
 
 function HomePage({transactionData}) {
@@ -28,11 +27,7 @@ function HomePage({transactionData}) {
           </div>
         </div>
         
-        <div className='transactionInfoList col-bg'>
-            Info
-
-            <Link to="/upload"><Button renderAs="button">uploadPage</Button></Link>
-
+        <div className='transactionInfoList'>
 
             <TransactionList list={transactionData}/>
 
