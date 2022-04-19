@@ -14,7 +14,7 @@ function HomePage({transactionData}) {
 
   return (
     <div className="application topSpace container-fluid homepage TransactionComponent col-10 col-md-10 col-lg-10">
-      <div className="innerInfo container col-1 col-md-6 col-lg-8">
+      <div className="innerInfo container col-10 col-md-6 col-lg-8">
         <div className="pichatPlusInfo row "> 
           <div className="rowBoxOne piChart col-sm">
               Pie Chart

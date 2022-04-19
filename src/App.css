@@ -93,9 +93,15 @@
   
 } */
 
+.loginBtn{
+  position: fixed;
+  top: 0px;
+  right: -3px
+}
+
+
 .loginBtn button{
   /* //move left */
-  float: right;
   margin: 10px 10px 0px 0px;
   z-index: 10;
 }
@@ -108,6 +114,9 @@
 .NavBar{
   padding-bottom: 33px;
   background-color: #333;
+  position: sticky;
+  width: 100%;
+  top:0px;
 }
 
 .UploadPage{
@@ -166,7 +175,7 @@
   display: flex;
   align-items: center;
   position: fixed;
-  top: 20px;
+  top: 16px;
   left: 20px;
 
   width: 26px;
