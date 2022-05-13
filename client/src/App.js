@@ -62,13 +62,13 @@ function App() {
     //   <FileDropZone />
     // </div> */}
 
-    <button onClick={() => {
+    {/* <button onClick={() => {
       fetch("/api/application-configuration")
       .then(res => res.json())
       .then(posts =>{
         console.log(posts)
       })
-      console.log(userTransactionData)}}>console.log</button>
+      console.log(userTransactionData)}}>console.log</button> */}
 
   </div>
 
