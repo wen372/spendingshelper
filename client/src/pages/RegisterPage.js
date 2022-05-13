@@ -44,7 +44,7 @@ class RegisterPage extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({firstName: this.state.firstName, lastName: null, email: this.state.email, password:this.state.password}),
+      body: JSON.stringify({firstName: this.state.username, lastName: null, email: this.state.email, password:this.state.password}),
     })
       .then(res => {
         if(res.ok) {
