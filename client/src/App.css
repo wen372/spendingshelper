@@ -85,10 +85,10 @@
 }
 
 .rowBoxTwoInfo{
-  border: 2px dashed rgb(111, 113, 111); 
+  /* border: 2px dashed rgb(111, 113, 111);  */
   text-align: center;
   padding: 5px;
-  height: auto;
+  height: 100%;
   width: 90%;
   margin: 10px;
 }
@@ -167,7 +167,14 @@
 }
 
 
-
+.infoBox{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction:column;
+  height: 50%;
+}
 
 
 

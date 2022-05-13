@@ -3,6 +3,7 @@ import Chart from 'chart.js/auto';
 import { Doughnut } from 'react-chartjs-2';
 import PiChart from '../components/PiChart';
 import TransactionList from '../components/TransactionList';
+import InfoBoxComponent from '../components/InfoBoxComponent';
 
 import { AuthContext } from '../context/AuthContext';
 import { Button } from 'react-bootstrap';
@@ -11,6 +12,7 @@ import { Button } from 'react-bootstrap';
 
 function HomePage({transactionData}) {
 
+  const [piChartData, setPiChartData] = useState([]);
 
 
   
@@ -21,11 +23,12 @@ function HomePage({transactionData}) {
         <div className="pichatPlusInfo row "> 
           <div className="rowBoxOne piChart col-sm">
               Pie Chart
-              <PiChart/>
+              <PiChart data = {piChartData}/>
           </div>
           <div className='rowBoxTwo col-sm' >
             <div className='rowBoxTwoInfo d-inline-flex p-2'>
-              InfoBox
+              
+              <InfoBoxComponent list ={transactionData} sendToParent = {setPiChartData}/>
             </div>
           </div>
         </div>
