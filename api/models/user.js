@@ -3,8 +3,8 @@ const bcrypt = require('bcryptjs');
 
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
-    getFullname() {
-      return [this.firstName, this.lastName].join(' ');
+    getUserEmail() {
+      return [this.email];
     }
   }
 

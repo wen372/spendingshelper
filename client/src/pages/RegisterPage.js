@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Navigate} from 'react-router-dom';
 
 import { AuthContext } from '../context/AuthContext';
 
@@ -44,7 +44,7 @@ class RegisterPage extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({firstName: this.state.username, lastName: null, email: this.state.email, password:this.state.password}),
+      body: JSON.stringify({firstName: this.state.firstName, lastName: null, email: this.state.email, password:this.state.password}),
     })
       .then(res => {
         if(res.ok) {
@@ -78,11 +78,11 @@ class RegisterPage extends React.Component {
 
 
   render() {
-    const { from } = this.props.location || { from: { pathname: '/' } };
+    const { from } = { from: { pathname: '/' } };
     const { redirectToReferrer, failed } = this.state;
 
     if (redirectToReferrer) {
-      return <Route to={from} />;
+      return <Navigate to={from} />;
     }
 
     let err = "";

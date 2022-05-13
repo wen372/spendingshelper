@@ -7,10 +7,7 @@ import TransactionList from '../components/TransactionList';
 import { AuthContext } from '../context/AuthContext';
 import { Button } from 'react-bootstrap';
 
-function useGetCurrName () {
-  const auth = useContext(AuthContext);
-  return auth.user.firstName
-}
+
 
 function HomePage({transactionData}) {
 
@@ -33,10 +30,8 @@ function HomePage({transactionData}) {
           </div>
         </div>
         
-        <div className='transactionInfoList'>
-
+        <div className='transactionInfoList row'>
             <TransactionList list={transactionData}/>
-            <Button onclick= {console.log(useGetCurrName())}>Curr name </Button>
         </div> 
       
       </div>

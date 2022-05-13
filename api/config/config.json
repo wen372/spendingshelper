@@ -1,10 +1,10 @@
 {
-    "development": {
-      "username": "wen372",
-      "password": "",
-      "database": "wen372",
-      "host": "127.0.0.1",
-      "dialect": "postgres"
+  "development": {
+    "username": "ctp_user",
+    "password": "ctp_pass",
+    "database": "app2021_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
     },
     "test": {
       "username": "ctp_user",

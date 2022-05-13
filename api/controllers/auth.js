@@ -42,7 +42,7 @@ router.get('/', (req, res) => {
 
 
 router.post('/logout', (req, res) => {
-  //req.logout(); 
+  req.logout(); 
   res.status(200).json({ message: 'Logout successful' });
 })
 

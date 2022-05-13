@@ -7,7 +7,12 @@ function AuthButton () {
   const auth = useContext(AuthContext);
 
   if(!auth.isAuthenticated) {
-    return <Link className="btn btn-primary" to="/login">Login</Link>;
+    //return <Link className="btn btn-primary" to="/login">Login</Link>;
+    return (
+    <div className = "loginBtn">
+      <Link className="btn btn-primary" to="/login">Login</Link>;
+    </div>
+    )
   }
 
   const logout = () => {
@@ -17,8 +22,8 @@ function AuthButton () {
   }
 
   return (
-    <div className="text-white">
-      Welcome! {auth.user.firstName} {" "}
+    <div className="loginBtn logout">
+      <p className="text-left"> Welcome {auth.user.firstName} {" "}!</p>
       <button className="btn btn-primary" onClick={logout}>Logout</button>
     </div>
   );

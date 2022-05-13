@@ -53,33 +53,39 @@
 }
 
 .innerInfo{
-  border: 1px dashed orange;
+  border: 2px solid black;
   min-height: 500px;
   min-width:80%;
 }
 .pichatPlusInfo{
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
+  border-bottom: 2px solid black;
+  
 }
 .rowBoxOne{
-  border: 2px dashed purple;
+  /* border: 2px dashed purple; */
   min-height: 300px;
+  padding-bottom: 20px;
   
 }
 
 
 .rowBoxTwo{
-  border: 2px dashed purple;
+  /* border: 2px dashed purple; */
+  border-left: 2px solid black;
   min-height: 300px;
 }
 
 .transactionInfoList{
-  border: 2px dashed green;
+  /* border: 2px dashed red; */
   min-height: 200px;
+  padding-top: 10px;
+  /* width:100%; */
 
 }
 
 .rowBoxTwoInfo{
-  border: 2px dashed green;
+  border: 2px dashed rgb(111, 113, 111); 
   text-align: center;
   padding: 5px;
   height: auto;
@@ -105,6 +111,26 @@
   margin: 10px 10px 0px 0px;
   z-index: 10;
 }
+
+.loginBtn a{
+  /* //move left */
+  margin: 10px 10px 0px 0px;
+  z-index: 10;
+}
+
+.loginBtn p {
+  color:white;
+  margin: 15px 10px 0px 0px;
+}
+.logout{
+  display: flex;
+}
+
+/* .logout lefttest{
+  /* //move left 
+  margin: 10px 10px 0px 0px;
+  z-index: 10;
+ */
 
 .middleT{
   z-index: 0px;
@@ -135,8 +161,9 @@
 }
 .TransactionTable{
   width: 100%;
-  border: 2px solid black;
   
+
+  border-bottom: 2px solid black;
 }
 
 
@@ -244,4 +271,14 @@
 }
 .menu__item:hover {
   background-color: #CFD8DC;
+}
+
+
+
+
+@media only screen and (max-width: 865px) {
+  .rowBoxTwo{
+    border-top: 2px solid black;
+    border-left: 0px solid black;
+  }
 }

@@ -16,7 +16,7 @@ function TransactionList({list}) {
 
   return (
 
-        <table className='TransactionTable'>
+        <table className='TransactionTable col-sm'>
           <thead>
             <tr>
               <th>Date</th>
