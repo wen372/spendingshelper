@@ -3,14 +3,14 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  NavLink
+ // Link,
+ // NavLink
 } from 'react-router-dom';
 import React, { useState } from "react";
 
-import Transaction from './components/Transaction';
+//import Transaction from './components/Transaction';
 import TransactionComponent from './components/TransactionComponent';
-import FileDropZone from './components/FileDropZone';
+//import FileDropZone from './components/FileDropZone';
 import HomePage from './pages/HomePage';
 import UploadPage from './pages/UploadPage';
 import NavBar from './components/NavBar';

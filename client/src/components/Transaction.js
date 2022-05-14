@@ -30,7 +30,7 @@ function Transaction({content}) {
         {/* {dataList} */}
 
         <td>{date}</td>
-        <td>{name}</td>
+        <td className= "transactionName">{name}</td>
         <td>{amount}</td>
         <td>{remaining}</td>
 

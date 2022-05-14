@@ -176,8 +176,16 @@
   height: 50%;
 }
 
+.transactionName{
+  text-align : left;
+  padding-left: 20px;
+}
 
-
+.AboutUsDevelopersInfo{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
 
 
 

@@ -19,14 +19,14 @@ function FileDropZone(props) {
   const [parsedCsvData, setParsedCsvData] = useState([]);
 
   const onDrop = useCallback(acceptedFiles => {
-    console.log(acceptedFiles);
+    // console.log(acceptedFiles);
     if (acceptedFiles.length) {
       parseFile(acceptedFiles[0]);
       // props.setTransactionData(parsedCsvData)
     }
     
   }, []);
-   console.log(parsedCsvData) 
+  //  console.log(parsedCsvData) 
   const {
     getRootProps,
     getInputProps,

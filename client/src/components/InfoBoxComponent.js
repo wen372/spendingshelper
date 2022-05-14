@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+
 
 function InfoBoxComponent(props) {
 
@@ -8,8 +8,9 @@ function InfoBoxComponent(props) {
   for (const x in props.list){
     if (props.list[x].Amount >= 0)
       positive += parseFloat(props.list[x].Amount)
-    else
+    else if (props.list[x].Amount < 0)
       negative += parseFloat(props.list[x].Amount)
+    
     
   }
 
