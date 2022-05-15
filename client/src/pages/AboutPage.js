@@ -32,7 +32,7 @@ function AboutPage({Arg}) {
 //     </div>
 //   );
   return(
-  <div className="application topSpace container-fluid homepage col-8 col-md-8 col-lg-8 ">
+  <div className="application topSpace container-fluid homepage col-sm-10 col-10 col-md-8 col-lg-8 ">
     <div className="card-body card-text">
       <h1><strong>About Us</strong></h1>
       <br></br>
