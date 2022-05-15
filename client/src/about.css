@@ -7,3 +7,30 @@
     border-radius: 13%;
     margin: 30vh 0px 0px 0px;
 }
+
+.Developer {
+    padding: 25px 10px 0px 10px;
+}
+.AboutUsDevelopersInfo{
+    align-content: center;
+    flex-wrap: wrap;
+}
+.socialLinks {
+    padding: 0px 3px 0px 3px;
+    align-items: center;
+}
+.AboutUsDevelopersLinks {
+    margin: 0px 0px 0px 9px;
+}
+
+.space {
+        margin: 0px 0px 0px 27px !important;
+}
+
+
+.card-body {
+    background: #7d7d7d21;
+    border-radius: 10px;
+    padding: 57px;
+    margin: 30px;
+}

@@ -36,7 +36,7 @@ function AboutPage({Arg}) {
     <div className="card-body card-text">
       <h1><strong>About Us</strong></h1>
       <br></br>
-      <h4>Our Motivivation</h4>
+      <h4>Our Motivation</h4>
       
       <div className="AboutUsInfo">
         <p>The motivation for this application was to create a web application that renders a visual chart to help people to track their spending habits and to help them to improve their spending habits aswell. </p>
@@ -44,26 +44,26 @@ function AboutPage({Arg}) {
       <h3>Developers</h3>
 
       <div className="AboutUsDevelopers ">
-          <div className="AboutUsDevelopersInfo">
-            <div className="Developer 1">
+          <div className="AboutUsDevelopersInfo" class="AboutUsDevelopersInfo">
+            <div className="Developer1" class="Developer">
               <h4>Titus Wen</h4>
-                <div className="AboutUsDevelopersLinks">
-                  <a target="_blank"  rel='noreferrer'class = ""  href="https://www.linkedin.com/in/tituswen/">
+                <div className="AboutUsDevelopersLinks" class="AboutUsDevelopersLinks">
+                  <a target="_blank"  rel='noreferrer' class = "socialLinks"  href="https://www.linkedin.com/in/tituswen/">
                       <img src={linkedin} alt="linkedin" width="32" height="32"/> 
                   </a>
-                  <a target="_blank"  rel='noreferrer'class = "" href="https://github.com/wen372">
+                  <a target="_blank"  rel='noreferrer' class = "socialLinks" href="https://github.com/wen372">
                       <img src={github} alt="github" width="32" height="32"/> 
                   </a>
                 </div>
             </div>
             
-            <div className="Developer 2">
+            <div className="Developer2" class="Developer">
               <h4>Caesar Cuzco</h4>
-                <div className="AboutUsDevelopersLinks">
-                    <a target="_blank"  rel='noreferrer'class = ""  href="https://www.linkedin.com/in/caesar001/">
+                <div className="AboutUsDevelopersLinks" class="AboutUsDevelopersLinks space">
+                    <a target="_blank"  rel='noreferrer' class = "socialLinks"  href="https://www.linkedin.com/in/caesar001/">
                         <img src={linkedin} alt="linkedin" width="32" height="32"/> 
                     </a>
-                    <a target="_blank"  rel='noreferrer'class = "" href="https://github.com/caesarc6">
+                    <a target="_blank"  rel='noreferrer' class = "socialLinks" href="https://github.com/caesarc6">
                         <img src={github} alt="github" width="32" height="32"/> 
                     </a>
                 </div>

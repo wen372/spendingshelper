@@ -40,17 +40,17 @@ function FileDropZone(props) {
   }, [props,parsedCsvData]);
 
 return (
-  <div>
+  <div >
     <div {...getRootProps({
-        className: `dropzone
+        className: ` row dropzone
         ${isDragAccept && 'dropzoneAccept'}
         ${isDragReject && 'dropzoneReject'}`,
       })}>
 
       <input {...getInputProps()} />
       {isDragActive ? (<p>Drop the files here ...</p>) : (<p>Drag 'n' drop some files here, or click to select files</p>)}
-      
-      <button>Import</button>
+    
+      <button class="btn-space">Import</button>
     
     </div>
     

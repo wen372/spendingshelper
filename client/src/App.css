@@ -8,11 +8,55 @@
 
 }
 
+.btn-space{
+  background-color: #338aedc6; /* Green */
+  border: none;
+  color: white;
+  padding:10px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px !important;
+}
+.btn-space:hover{
+  background-color: #2a72c5c5 !important; /* Green */
+}
+
+select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0px 22px 0px !important;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: #24ce65; /* Green */
+  border: none;
+  color: white;
+  padding:10px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px !important;
+}
+/* hover with smooth transition animation */
+button:hover{
+  background-color: #20b458; /* Green */
+}
 .no_underline{
   text-decoration: none !important;
 }
 .dropzone {
-  background: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,17 +65,21 @@
   cursor: pointer;
   height: 150px;
   width: 100%;
-  border: 2px dashed cyan;
+  background-color: #5f5e5e1f;
   outline: none;
+  border-radius: 18px;
 }
 
 .dropzoneReject {
-  border: 2px dashed rgb(255, 0, 0);
+  border: 2px solid rgb(255, 0, 0);
 }
 .dropzoneAccept {
   border: 2px dashed green;
 }
 
+.btn-space{
+width: 50% !important;
+}
 /* .homepage{
   
 } */
