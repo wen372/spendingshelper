@@ -32,14 +32,14 @@ function AboutPage({Arg}) {
 //     </div>
 //   );
   return(
-  <div className="application topSpace container-fluid homepage col-sm-10 col-10 col-md-8 col-lg-8 ">
+  <div className="application topSpace container-fluid homepage col-sm-10 col-12 col-md-8 col-lg-8 ">
     <div className="card-body card-text">
       <h1><strong>About Us</strong></h1>
       <br></br>
       <h4>Our Motivation</h4>
       
       <div className="AboutUsInfo">
-        <p>The motivation for this application was to create a web application that renders a visual chart to help people to track their spending habits and to help them to improve their spending habits aswell. </p>
+        <p>The motivation for this application was to create a web application that renders a visual chart to help people track their spending habits and to help them to improve their spending habits as well. </p>
       </div>
       <h3>Developers</h3>
 
